@@ -21,7 +21,7 @@
                 enumerable:true,
                 configurable:true,
                 get:function(){
-                    console.log(`get ${key}:${val}`)
+                    console.log('get ${key}:${val}')
                     if(currentObserver){
                         console.log("has currentObserver")
                         currentObserver.subscribeTo(subject)
@@ -213,7 +213,7 @@
         },
         methods:{
             sayHi(){
-                alert('hi ${this.name}')
+                alert(`hi ${this.name}`)
             }
         }
     })
